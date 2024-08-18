@@ -1,7 +1,7 @@
 # Trillo
 All in one booking app. (Just front-end)
 
-#Setup
+# Setup
 Install all packages:
 ```
 npm install
