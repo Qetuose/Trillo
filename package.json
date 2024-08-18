@@ -7,9 +7,9 @@
     "dev-server": "live-server",
     "start": "npm-run-all --parallel dev-server sass-dev",
     "sass-compile": "sass --update --style=expanded sass:css",
-    "prefix-css": "postcss --use autoprefixer -b 'last 10 versions' css/main.concat.css -o css/main.prefix.css",
+    "prefix-css": "postcss --use autoprefixer -b 'last 10 versions' css/main.css -o css/main.prefix.css",
     "compress-css": "node-sass css/main.prefix.css css/main.css --output-style compressed",
-    "build-css": "npm-run-all sass-compile concat-css prefix-css compress-css"
+    "build-css": "npm-run-all sass-compile prefix-css compress-css"
   },
   "author": "Lukas Baltrimas",
   "license": "ISC",
